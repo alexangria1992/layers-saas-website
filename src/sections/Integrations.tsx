@@ -45,18 +45,28 @@ export default function Integrations() {
     return (
         <section className="py-24 overflow-hidden">
             <div className="container">
-                <Tag>Integrations</Tag>
-                <h2 className="text-6xl font-medium mt-6">
-                    Plays well with{" "}
-                    <span className="text-lime-400">others</span>
-                </h2>
-                <p className="text-white/50 mt-4 text-lg">
-                    Layers seamlessly connects with your favorite tools, making
-                    it easy to plug into any workflow and collaborate across
-                    platforms
-                </p>
-                <div className="h-[400px] mt-8 overflow-hidden [mask-image:linear-gradient(to_bottom, transparent, black_10%, black_90%, transparent)]">
-                    <IntegrationsColumn integrations={integrations} />
+                <div className="grid lg:grid-cols-2 items-center lg:gap-16">
+                    <div>
+                        <Tag>Integrations</Tag>
+                        <h2 className="text-6xl font-medium mt-6">
+                            Plays well with{" "}
+                            <span className="text-lime-400">others</span>
+                        </h2>
+                        <p className="text-white/50 mt-4 text-lg">
+                            Layers seamlessly connects with your favorite tools,
+                            making it easy to plug into any workflow and
+                            collaborate across platforms
+                        </p>
+                    </div>
+                    <div>
+                        <div className="h-[400px] grid mt-8  md:grid-cols-2 gap-4 overflow-hidden [mask-image:linear-gradient(to_bottom, transparent, black_10%, black_90%, transparent)] lg:h-[800px] lg:mt-0">
+                            <IntegrationsColumn integrations={integrations} />
+                            <IntegrationsColumn
+                                integrations={integrations.slice().reverse()}
+                                className="hidden md:flex"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
