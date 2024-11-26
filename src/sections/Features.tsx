@@ -32,7 +32,7 @@ export default function Features() {
                 <div className="mt-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-8">
                     <FeatureCard
                         title="Real-time Collaboration"
-                        description="Work together seamlessly with conflict editing"
+                        description="Work together seamlessly with conflict-free team editing"
                         className="md:col-span-2 lg:col-span-1"
                     >
                         <div className="aspect-video flex items-center justify-center">
