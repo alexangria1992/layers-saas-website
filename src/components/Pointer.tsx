@@ -14,7 +14,7 @@ export default function Pointer(props: {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
+                strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 className="feather feather-mouse-pointer text-white size-5"
